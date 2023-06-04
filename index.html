@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Black Jack Game</title>
+    <link rel="stylesheet" href="/style.css">
+    
 </head>
 <body>
-    asif bahi
+    <div class="container">
+        <h1>Black Jack Game</h1>
+        <h4 style="text-align: center;margin-bottom: 10px ;">In Blackjack, Player plays against the dealer (the house). Your goal is to draw cards with a value as close to 21 as possible without going over</h4>
+        <h2><span id="blackjack-result">Let's Play</span></h2>
+        <div class="flex-box-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-box-row-2">
+            <div>
+                <button class="btn btn01" id="blackjack-hit-button">Hit</button>
+                <button class="btn btn02" id="blackjack-stand-button">Stand</button>
+                <button class="btn btn03" id="blackjack-deal-button">Deal</button>
+            
+            </div>
+        </div>
+        <div class="flex-box-row-3">
+            <table >
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th> 
+                    <th>Draw</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+    
 </body>
+<script src="/script.js"></script>
 </html>
